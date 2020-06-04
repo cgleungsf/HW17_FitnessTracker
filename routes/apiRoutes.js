@@ -15,7 +15,7 @@ module.exports = function (app) {
       const response = await db.Workout.create({ type: "workout" });
       res.json(response);
     } catch (err) {
-      console.log("Error! workout was not created. ", err);
+      console.log("Error! work was not created: ", err);
     }
   });
   app.put("/api/workouts/:id", ({ body, params }, res) => {
