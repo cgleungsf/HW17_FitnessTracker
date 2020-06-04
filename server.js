@@ -13,6 +13,5 @@ app.use(routes);
 
 
 mongoose.connect(process.env.MONGODB_URI  || 'mongodb://localhost/workout',{  useNewUrlParser: true,useFindAndModify:false , useUnifiedTopology: true } );
-// mongoose.connect(process.env.MONGODB_URI  || 'mongodb://localhost/redux_todo_db', {  useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true ,useFindAndModify:false });
 
 app.listen(PORT);
